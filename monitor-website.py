@@ -10,10 +10,6 @@ EMAIL_ADDRESS = os.environ.get('EMAIL_ADDRESS')
 EMAIL_PASSWORD = os.environ.get('EMAIL_PASSWORD')
 LINODE_TOKEN = os.environ.get('LINODE_TOKEN')
 
-# EMAIL_ADDRESS = 'mauricio.ecamilo@gmail.com'
-# EMAIL_PASSWORD = 'uhmwsnhpijagynkp'
-# LINODE_TOKEN = 'TESTE'
-
 def send_notification(email_msg):
         print('Sending email...')
         with smtplib.SMTP('smtp.gmail.com', 587) as smtp: 
